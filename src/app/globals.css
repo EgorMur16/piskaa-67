@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@plugin './hero.ts';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+:root {
+      
+    background: var(--background);
+  background: linear-gradient(to bottom, rgb(44, 43, 44), rgb(8, 8, 8));
+   background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(44, 43, 44)); 
+   background-attachment: fixed; 
+
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --foreground: #ededed;
+  }
+}
+
+body {
+  
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hed {
+  padding-left:5vb;
+}
+.hed2 {
+  padding-right: 5vb
+
+}
+.hed3 {
+  padding-left: 14vb;
+}
+
+.Topicc {
+  font-size: 45px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 340px;
+  /* margin-right: 170px; */
+}
+
+.blackc {
+  color: black;
+}
+.ggv {
+  background-color: rgb(34, 34, 34);
+}
+.ggc {
+  background-color: rgb(27, 25, 25);
+}
+
+.bgAcard{
+  background-color:rgb(48, 46, 46)
+}
+.bgm {
+  background-color: #171717;
+}
+.logincard {
+  background-color: #171717;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 30px;
+}
+.c {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.b {
+  box-shadow: 0 0px 10px white;
+  border-radius: 30px;
+  padding: 10px;
+}
+.btn {
+border-radius: 40px;
+  box-shadow: 0 0px 5px white;
+  text-align: center;
+  padding: 10px;
+ width: 100%;
+  background-color: #ffffff;
+  color: #0a0a0a;
+}
+.cw {
+  color: white;
+}
